@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png">
+    <meta name="theme-color" content="#E6E8EC">
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/style_dl.css">
+    <link rel="stylesheet" href="./css/newmenu.css">
+    <link rel="stylesheet" href="./css/pweb.css">
+    <link rel="stylesheet" href="./css/pweb2023.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer type="module" src="./scripts.js"></script>
+</head>
+<body>
+<header class="header">
+    <div class="wrapper" style="position: relative;">
+        <div id="city_mask" onclick="$(this).hide();$('.cities_list').hide();"></div>
+        <div id="cities_list_ru" class="row cities_list" style="max-height: 500px; overflow:auto; z-index: 10;" onclick="$(this).hide();$('.cities_list').hide();">
+            <div class="cities_list__wrapper">
+                <div>Москва</div>
+                <div>Санкт-Петербург</div>
+                <div>Воронеж</div>
+            </div>
+        </div>
+        <div class="headerTopRow">
+            <a href="/" class="logo">
+                <img src="./images/logo_2023.svg">
+                <div class="logo_descriptor">
+                    Рекламно-производственная компания
+                </div>
+            </a>
+            <div class="headerTopRow__info">
+                <div class="phones">
+                    <a href="mailto:3097606@mail.ru" onclick="yaCounter50771491.reachGoal('email_header');">
+                        <a href="mailto:3097606@mail.ru">3097606@mail.ru</a>                  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="tel:+78126047706" onclick="yaCounter50771491.reachGoal('telephone_header');">
+                        <a href="tel:+78126047706">+7(812)604-77-06</a>                      </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="tel:88007753645" onclick="yaCounter50771491.reachGoal('telephone_header');">
+                        <a href="tel:88007753645">8(800)775-36-45</a>                      </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+
+                <a class="ip_city" onclick="$('#city_mask').show(); $('.cities_list').show(); $('.cities_list').addClass('active'); return false;">
+                    <img src="/templates/coroba/images/place.svg">
+                    Санкт-Петербург
+                </a>
+
+                <div class="headerTopRow__icons">
+
+                    <ul class="socials__list">
+                        <li class="soc-nav__item">
+                            <a href="https://vk.com/diskontreklama" class="soc-nav__link" target="_blank" rel="nofollow">
+                                <img src="/templates/coroba/images/2023/soc-vk.svg" alt="vk">
+                            </a>
+                        </li>
+                        <li class="soc-nav__item">
+                            <a href="https://www.youtube.com/channel/UCVCfd8b7bWTj_3RyGfHiC3A" class="soc-nav__link" target="_blank" rel="nofollow">
+                                <img src="/templates/coroba/images/2023/soc-youtube.svg" alt="youtube">
+                            </a>
+                        </li>
+                        <li class="soc-nav__item">
+                            <a href="https://t.me/diskontreklama_bot" class="soc-nav__link" target="_blank" rel="nofollow">
+                                <img src="/templates/coroba/images/2023/soc-tg.svg" alt="t.me">
+                            </a>
+                        </li>
+                        <li class="soc-nav__item">
+                            <a href="https://wa.me/79319792092" class="soc-nav__link" target="_blank" rel="nofollow" onclick="yaCounter50771491.reachGoal('whatsapp_header');">
+                                <img src="/templates/coroba/images/2023/soc-wa.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="soc-nav__item">
+                            <a href="viber://chat?number=79319792092/" class="soc-nav__link" target="_blank" rel="nofollow" onclick="yaCounter50771491.reachGoal('viber_header');">
+                                <img src="/templates/coroba/images/2023/soc-viber.svg" alt="viber">
+                            </a>
+                        </li>
+                    </ul>                  <div class="header_cart">
+                    <a href="/emarket/cart/">
+                        <div class="count "></div>
+                        <img src="/templates/coroba/images/cart_ico.svg">
+                    </a>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="top_menu headerNav_adaptive">
+            <ul class="mainMenu__list">
+                <li class="mainNav_1levelItem parent">
+                    <a href="/vyveski/" class=" mainNav_1levelItem__link">Вывески</a>
+                    <div class="submenuWrapper">
+                        <ul class="mainNav_2levelList">
+                            <li class="mainNav_2levelItem">
+                                <a href="/svetovye-obemnye-bukvy/">Объемные буквы</a></li>
+                            <li class="mainNav_2levelItem">
+                                <a href="/svetovye-koroba/">Световые короба</a></li>
+                            <li class="mainNav_2levelItem">
+                                <a href="/neonovaja-vyveska-na-zakaz/">Неоновые вывески</a></li>
+                            <li class="mainNav_2levelItem">
+                                <a href="/calculator-stoimosti-mr/">Калькулятор монтажных работ</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="mainNav_1levelItem ">
+                    <a href="/uf-pechat/" class=" mainNav_1levelItem__link">УФ-печать</a>
+                </li>
+                <li class="mainNav_1levelItem ">
+                    <a href="/uslugi/pechat-na-samokleike/" class=" mainNav_1levelItem__link">Печать на&nbsp;плёнке</a>
+                </li>
+                <li class="mainNav_1levelItem ">
+                    <a href="/uslugi/svetovye-paneli/" class=" mainNav_1levelItem__link">Световые панели</a>
+                </li>
+                <li class="mainNav_1levelItem ">
+                    <a href="/dostavka/" class=" mainNav_1levelItem__link">Доставка</a>
+                </li>
+                <li class="mainNav_1levelItem ">
+                    <a href="/partneram/" class=" mainNav_1levelItem__link">Партнерам</a>
+                </li>
+                <li class="mainNav_1levelItem ">
+                    <a href="/fotoalbom/" class=" mainNav_1levelItem__link">Производство</a>
+                </li>
+                <li class="mainNav_1levelItem ">
+                    <a href="/vakansii/" class=" mainNav_1levelItem__link">Вакансии</a>
+                </li>
+                <li class="mainNav_1levelItem ">
+                    <a href="/kontakty/" class=" mainNav_1levelItem__link">Контакты</a>
+                </li>
+            </ul>
+        </div>
+        <div class="headerMobRow">
+            <div class="mobpad">
+                <div style="display: flex; justify-content: space-between;">
+                    <a href="/" class="logo">
+                        <img src="/templates/coroba/images/logo_2023.svg">
+                        <div class="logo_descriptor">
+                            Рекламно-производственная компания
+                        </div>
+                    </a>                    <div class="mob__cartWrapper">
+                    <div class="header_cart">
+                        <a href="/emarket/cart/">
+                            <div class="count "></div>
+                            <img src="/templates/coroba/images/cart_ico.svg">
+                        </a>
+                    </div>
+                    <div class="header__hamburger">
+                        <a class="adaptive-menu-toggle" href="#">
+                                    <span class="menu-toggle-inner">
+                                        <span class="menu-toggle-line menu-toggle-line--1"></span>
+                                        <span class="menu-toggle-line menu-toggle-line--2"></span>
+                                        <span class="menu-toggle-line menu-toggle-line--3"></span>
+                                        <span class="menu-toggle-line menu-toggle-line--4"></span>
+                                        <span class="menu-toggle-line menu-toggle-line--5"></span>
+                                    </span>
+                        </a>
+                    </div>
+                </div>
+                </div>
+                <div class="mobCityWrapper">
+                    <a class="ip_city" onclick="$('#city_mask').show(); $('.cities_list').show(); $('.cities_list').addClass('active'); return false;">
+                        <img src="/templates/coroba/images/place.svg">
+                        Санкт-Петербург
+                    </a>
+                    <div class="phones phones__mobile">
+                        <a href="tel:+78126047706" onclick="yaCounter50771491.reachGoal('telephone_header');">
+                            <a href="tel:+78126047706">+7(812)604-77-06</a>                            </a>
+                        <a href="tel:88007753645" onclick="yaCounter50771491.reachGoal('telephone_header');">
+                            <a href="tel:88007753645">8(800)775-36-45</a>                            </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="wrapper">
+            <div class="hero__content hexagon">
+                <h1 class="title_h1">Ваша удача начинается здесь!</h1>
+                <p>Получите свой промокод и зарабатывайте с каждым новым клиентом!</p>
+                <div class="main__btns_wide">
+                    <a href="#" class="btn btn_violet">Получить фишку</a>
+                    <a href="#" class="btn btn_inline">VK: удвой бонусы</a>
+                </div>
+            </div>
+        </div>
+<!--        <div class="chip__container">-->
+<!--            <img src="./images/chip.png" alt="" class="chip__rotate">-->
+<!--            <div class="chip__qr-wrapper">-->
+<!--                <img src="./images/chip_qr.png" alt="">-->
+<!--            </div>-->
+<!--        </div>-->
+        <img src="./images/hero_1.png" alt="" class="hero__img hero__img_1">
+        <img src="./images/hero_2.png" alt="" class="hero__img hero__img_2">
+        <img src="./images/roulette.png" alt="" class="hero__img hero__img_3">
+        <img src="./images/chip_full.png" alt="" class="hero__img hero__img_4">
+    </section>
+
+    <section class="about">
+
+        <div class="wrapper">
+            <h2 class="title_h2">Превратите связи в выгоду с <span class="text-gradient text-gradient_purple">Дисконт-Рекламой!</span>
+            </h2>
+            <div class="about__list">
+                <div class="about__item about__item_1">
+                    <div class="about__item__text-block">
+                        <div class="about__item__counter text-gradient text-gradient_purple">Шаг 01</div>
+                        <h3 class="about__item__title">Получите вашу персональную фишку:</h3>
+                        <p>Ваш путь к вознаграждениям начинается с покупки любой нашей продукции. В качестве
+                            благодарности,
+                            мы дарим вам эксклюзивную покерную фишку. </p>
+                        <p>Эта фишка – больше, чем сувенир. С ней вы не только владелец уникального аксессуара, но и
+                            участник нашей реферальной программы. </p>
+                        <p>Фишка оснащена индивидуальным QR-кодом, который является вашим первым шагом к
+                            вознаграждениям.</p>
+                    </div>
+                    <div class="about__item__img-wrapper">
+                        <img src="./images/about_1.png" alt="">
+                    </div>
+                </div>
+                <div class="about__item about__item_2">
+                    <div class="about__item__text-block">
+                        <div class="about__item__counter text-gradient text-gradient_purple">Шаг 02</div>
+                        <h3 class="about__item__title">Зарегистрируйте фишку онлайн</h3>
+                        <p>Ваша фишка – ваш ключ к реферальной программе. </p>
+                        <p>Заполните специальный раздел ниже и введите номер, указанный на фишке. </p>
+                        <p>Это действие активирует ваше участие в программе и позволит создать уникальный промокод,
+                            который
+                            вы сможете делиться с окружающими.</p>
+                    </div>
+                    <div class="about__item__img-wrapper">
+                        <img src="./images/about_2.png" alt="">
+                    </div>
+                </div>
+                <div class="about__item about__item_3">
+                    <div class="about__item__text-block">
+                        <div class="about__item__counter text-gradient text-gradient_purple">Шаг 03</div>
+                        <h3 class="about__item__title">Поделитесь промокодом</h3>
+                        <p>Ваши друзья – ваша команда.</p>
+                        <p>Передавайте ваш уникальный промокод друзьям и знакомым, чтобы они могли воспользоваться
+                            скидкой
+                            на
+                            нашу продукцию.</p>
+                        <p>Разделяйте счастье экономии с близкими и расширяйте свою сеть влияния.</p>
+                    </div>
+                    <div class="about__item__img-wrapper">
+                        <img src="./images/about_3.png" alt="">
+                    </div>
+                </div>
+                <div class="about__item about__item_4">
+                    <div class="about__item__text-block">
+                        <div class="about__item__counter text-gradient text-gradient_purple">Шаг 04</div>
+                        <h3 class="about__item__title">Зарабатывайте с промокодом</h3>
+                        <p>Каждый использованный промокод приносит вам бонусы.</p>
+                        <p>Как только ваш друг совершит покупку, используя ваш промокод, на ваш счет капает
+                            вознаграждение.</p>
+                        <p>Чем больше друзей воспользуются кодом, тем больше ваш заработок.</p>
+                    </div>
+                    <div class="about__item__img-wrapper">
+                        <img src="./images/about_4.png" alt="">
+                    </div>
+                </div>
+                <div class="about__item about__item_5">
+                    <div class="about__item__text-block">
+                        <div class="about__item__counter text-gradient text-gradient_purple">Шаг 05</div>
+                        <h3 class="about__item__title">Повторите и множьте ваши выгоды</h3>
+                        <p>Каждый использованный промокод приносит вам бонусы.</p>
+                        <p>Как только ваш друг совершит покупку, используя ваш промокод, на ваш счет капает
+                            вознаграждение.</p>
+                        <p>Чем больше друзей воспользуются кодом, тем больше ваш заработок.</p>
+                    </div>
+                    <div class="about__item__img-wrapper">
+                        <img src="./images/about_5.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about__gradient about__gradient_1"></div>
+        <div class="about__gradient about__gradient_2"></div>
+        <div class="about__gradient about__gradient_3"></div>
+        <div class="about__gradient about__gradient_4"></div>
+    </section>
+
+    <section class="benefits">
+        <div class="wrapper">
+            <h2 class="title_h2">Ваши <span class="purple">Выгоды</span></h2>
+            <div class="benefits__list">
+                <div class="benefits__item">
+                    <div class="benefits__item__img-wrapper">
+                        <img src="./images/benefits_1.png" alt="" class="benefits__item__img">
+                    </div>
+                    <div class="benefits__item__text">
+                        <h3 class="title_h3"><span class="purple">1000 рублей</span> на ваш
+                            счет</h3>
+                        <p>За каждого нового клиента по вашему промокоду</p>
+                    </div>
+                </div>
+                <div class="benefits__item">
+                    <div class="benefits__item__img-wrapper">
+                        <img src="./images/benefits_2.png" alt="" class="benefits__item__img">
+                    </div>
+                    <div class="benefits__item__text">
+                        <h3 class="title_h3"><span class="purple">Скидка 5%</span> для ваших
+                            друзей</h3>
+                        <p>На их первую покупку с вашим промокодом</p>
+                    </div>
+                </div>
+                <div class="benefits__item">
+                    <div class="benefits__item__img-wrapper">
+                        <img src="./images/benefits_3.png" alt="" class="benefits__item__img">
+                    </div>
+                    <div class="benefits__item__text">
+                        <h3 class="title_h3"><span class="purple">Удвойте</span> ваши
+                            возможности</h3>
+                        <p>Подписавшись на нашу группу ВКонтакте</p>
+                    </div>
+                </div>
+            </div>
+            <div class="benefits__vk-promo">
+                <div class="benefits__vk-promo__text">
+                    <h3 class="title_h3">Почему стоит подписаться на нашу <span class="blue">группу в VK?</span></h3>
+                    <p>Присоединяйтесь к нашему сообществу в VK и удвойте ваши преимущества! Участвуйте в регулярных акциях,
+                        чтобы максимизировать вашу выгоду.</p>
+                    <a href="https:\\vk.ru" class="btn btn_violet">Подписаться Вконтакте</a>
+                </div>
+<!--                <img src="./images/benefits_vk.png" alt="" class="benefits__img">-->
+                <div class="benefits__vk-promo__img-container"
+                     style="background-image: url('./images/benefits_vk.png')"
+                ></div>
+            </div>
+        </div>
+        <div class="benefits__gradient benefits__gradient_1"></div>
+        <div class="benefits__gradient benefits__gradient_2"></div>
+    </section>
+
+    <section class="reg">
+        <div class="wrapper">
+            <div class="reg__content hexagon">
+                <div class="title_h2">Зарегистрироваться<br>
+                    <span class="gold">в бонусной программе</span></div>
+                <div class="slot-machine" id="slot-machine">
+                    <div class="slot-machine__window">
+                        <div class="slot-machine__inner slot-machine__inner_1">
+                            <div class="slot-machine__title">Заполните необходимые поля</div>
+                            <form id="call_full_form_id" name="call_full_form_id" action="/udata/webforms/send/" method="POST">
+                                <div id="call_full_form_id_validate" style="display: none;">
+                                    call_full_form_id_imya,call_full_form_id_telefon,call_full_form_id_email
+                                </div>
+                                <input type="hidden" name="system_form_id" value="177">
+                                <input type="hidden" name="system_email_to" value="3326">
+                                <input type="hidden" name="data[new][domain_name]" value="xn----8sbangqocjlfl2ajs.xn--p1ai">
+                                <input type="hidden" name="data[new][page_link]" value="http://xn----8sbangqocjlfl2ajs.xn--p1ai">
+
+                                <div class="common-form-delim">
+                                    <input type="text" placeholder="ФИО" name="data[new][imya]" id="call_full_form_id_imya">
+
+                                </div>
+
+                                <div class="common-form-wrapper">
+                                    <div class="common-form-delim delim_w50">
+                                        <input type="text" placeholder="E-mail" name="data[new][email]" id="call_full_form_id_email">
+                                    </div>
+                                    <div class="common-form-delim delim_w50">
+                                        <input type="text" placeholder="Телефон" name="data[new][telefon]" id="call_full_form_id_telefon" class="phone-mask">
+                                    </div>
+                                </div>
+
+                                <div class="common-form-delim">
+                                    <input type="text" placeholder="Номер фишки" id="call_full_form_id_chip">
+                                </div>
+
+                                <input type="text" placeholder="E-mail work" name="data[new][email_important]" class="form-control" style="display: none;">
+
+                                <a class="btn btn_violet" id="slot-machine_btn" onclick="sendCallForm(this, 'call_full_form_id', 0); yaCounter50771491.reachGoal('call'); return false;">Зарегистрироваться и начать зарабатывать</a>
+
+                                <p class="agree">
+                                    <span id="call_full_form_id_agree" class="checkbox">Я согласен с</span>
+                                    <a href="/politika-konfidencialnosti/" target="_blank">Политикой конфиденциальности</a>
+                                </p>
+                            </form>
+                        </div>
+                        <div style="display: none" class="slot-machine__inner slot-machine__inner_2">
+                            <div class="slot-machine__title">Вы успешно зарегистрировали фишку</div>
+                            <div class="slot-machine__prise">
+                                <div class="slot-machine__prise__name">Промокод</div>
+                                <div class="slot-machine__prise__value"><span>VYJKL5489632</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slot-machine__handle">
+                        <div class="slot-machine__handle__base"></div>
+                        <div class="slot-machine__handle__lever"></div>
+                        <div class="slot-machine__handle__ball">
+                            <img src="./images/6ced5755214a-slot-m-ball.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./images/reg_1.png" alt="" class="reg__img reg__img_1">
+            <img src="./images/chip.png" alt="" class="reg__img reg__img_2">
+            <img src="./images/hero_2.png" alt="" class="reg__img reg__img_3">
+        </div>
+
+    </section>
+
+    <section class="faq">
+        <div class="wrapper">
+            <h2 class="title_h2">Ваши Выгоды</h2>
+            <div class="my-accordion">
+                <div class="my-accordion__item">
+                    <div class="my-accordion__text-wrapper">
+                        <button type="button" class="my-accordion__button">Как получить покерную фишку?</button>
+                        <div class="my-accordion__panel">
+                            <p>Покерная фишка выдается после каждой покупки нашей продукции. Вы найдете её вместе с
+                                вашим
+                                заказом. На фишке указан уникальный QR-код, который необходим для участия в
+                                реферальной программе.</p>
+                        </div>
+                    </div>
+                    <div class="my-accordion__icon-wrapper">
+                        <span class="my-accordion__icon"></span>
+                    </div>
+                </div>
+
+
+                <div class="my-accordion__item">
+                    <button type="button" class="my-accordion__button">Где я могу зарегистрировать свою фишку?</button>
+                    <div class="my-accordion__panel">
+                        <p>Покерная фишка выдается после каждой покупки нашей продукции. Вы найдете её вместе с вашим
+                            заказом. На фишке указан уникальный QR-код, который необходим для участия в
+                            реферальной программе.</p>
+                    </div>
+                </div>
+                <div class="my-accordion__item">
+                    <button type="button" class="my-accordion__button">Могу ли я использовать промокод более
+                        одного раза?
+                    </button>
+                    <div class="my-accordion__panel">
+                        <p>Покерная фишка выдается после каждой покупки нашей продукции. Вы найдете её вместе с вашим
+                            заказом. На фишке указан уникальный QR-код, который необходим для участия в
+                            реферальной программе.</p>
+                    </div>
+                </div>
+                <div class="my-accordion__item">
+                    <button type="button" class="my-accordion__button">Как я могу отслеживать свои заработанные
+                        бонусы?
+                    </button>
+                    <div class="my-accordion__panel">
+                        <p>Покерная фишка выдается после каждой покупки нашей продукции. Вы найдете её вместе с вашим
+                            заказом. На фишке указан уникальный QR-код, который необходим для участия в
+                            реферальной программе.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+
+</footer>
+
+</body>
+</html>

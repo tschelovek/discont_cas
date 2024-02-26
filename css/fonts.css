@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Inter-Regular.woff2') format("woff2"),
+    url('../fonts/Inter-Regular.woff') format("woff");
+}
+
+@font-face {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 200 1000;
+    src: url('../fonts/Nunito-VariableFont_wght.ttf') format("truetype-variations");
+}
+
+@font-face {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/Raleway-SemiBold.ttf') format("truetype");
+}
