@@ -472,4 +472,110 @@ body
       right: 0
 //left: 60px
 
+
+.sequence
+  padding: 150px 0
+  position: relative
+  background-color: #F2F2F2
+  &__list
+    display: flex
+    gap: 32px
+  &__item
+    display: flex
+    flex-flow: column
+    align-items: center
+    text-align: center
+    &__title
+      max-width: 210px
+    &__number
+      font-weight: 700
+      font-size: 16px
+      color: #6B16E1
+    &__round-wrapper
+      padding: 0 20px 8px
+      display: flex
+      flex-flow: column
+      justify-content: end
+      width: 160px
+      height: 160px
+      border-radius: 50%
+      background-color: white
+      overflow: hidden
+      position: relative
+      z-index: 20
+      transition: scale 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out
+      border: 2px dashed #8E2DE2
+      font-family: "Nunito", sans-serif
+      font-weight: 700
+      font-size: 18px
+      line-height: 110%
+      color: #6B16E1
+      &__outer
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 180px
+        height: 180px
+      img
+        //max-width: 100%
+      p
+        margin: 0 0 1em
+      &:hover
+        //scale: 1.2
+        width: 180px
+        height: 180px
+    &_edge .sequence__item__round-wrapper
+      border: none
+      background: linear-gradient(94deg, #8E2DE2 0%, #4A00E0 100%)
+      color: white
+    &_1
+      margin-top: 28px
+      img
+        margin: 0 auto 12px
+        translate: 0 -8px
+        width: 76px
+    &_2
+      img
+        margin: 0 auto
+        width: 122px
+    &_3
+      margin-top: 48px
+      img
+        margin: 0 auto
+        translate: 34px -16px
+        width: 122px
+    &_4
+      margin-top: 32px
+      img
+        margin: 0 auto
+        translate: 0 4px
+        width: 116px
+    &_5
+      margin-top: 68px
+      img
+        margin: 0 auto
+        translate: 0 -20px
+        width: 137px
+    &_6
+      margin-top: 16px
+      img
+        margin: 0 auto
+        translate: 0 8px
+        width: 142px
+      .sequence__item__title
+        max-width: 240px
+
+  .title_h2
+    margin: 0 0 60px
+  &__pattern_line
+    height: 24%
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: center center
+    position: absolute
+    right: 0
+    left: 0
+    bottom: 25%
+    z-index: 10
+
 @import "responsive"

@@ -1,18 +1,27 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     /**
+     * Анимации
+     */
+
+    /**
      * Анимация ручки игрового автомата в разделе section.reg
-     * @type {HTMLElement}
+     *
+     * slotMachine {HTMLElement} Игровой автомат
+     * activateButton {HTMLElement} Кнопка, к нажатию которой привязана анимация
      */
     const slotMachine = document.getElementById('slot-machine');
-    const handleBallKeyframes = [
+    const activateButton = document.getElementById('slot-machine_btn');
+
+    // Кейфреймы движения ручки игрового автомата
+    const keyframesHandleBall = [
         {translate: "0 -100px"},
         {translate: "12px 12px"},
         {translate: "0 100px"},
         {translate: "12px 12px"},
         {translate: "0 -100px"},
     ];
-    const handleLeverKeyframes = [
+    const keyframesHandleLever = [
         {rotate: "207deg", height: "100px"},
         {rotate: "270deg", height: "40px"},
         {rotate: "333deg", height: "100px"},
@@ -23,9 +32,10 @@ document.addEventListener('DOMContentLoaded', () => {
         duration: 800,
         iterations: 1,
     };
+    //
     let isSlotMachineAnimating = false;
 
-    document.getElementById('slot-machine_btn').addEventListener('click', animateSlotMachineHandle);
+    activateButton.addEventListener('click', animateSlotMachineHandle);
 
     function animateSlotMachineHandle() {
         if (isSlotMachineAnimating) {
@@ -34,13 +44,37 @@ document.addEventListener('DOMContentLoaded', () => {
 
         isSlotMachineAnimating = true;
 
-        slotMachine.querySelector('.slot-machine__handle__lever').animate(handleLeverKeyframes, keyframesTimings)
-        slotMachine.querySelector('.slot-machine__handle__ball').animate(handleBallKeyframes, keyframesTimings)
-        setTimeout(() => isSlotMachineAnimating = false, (keyframesTimings.duration + 50))
+        //TODO: Попробовать переделать на промисы
+
+        slotMachine.querySelector('.slot-machine__handle__lever').animate(keyframesHandleLever, keyframesTimings);
+        slotMachine.querySelector('.slot-machine__handle__ball').animate(keyframesHandleBall, keyframesTimings);
+        setTimeout(() => isSlotMachineAnimating = false, (keyframesTimings.duration + 50));
+
     }
+
+    // ====================================
+
+    const lever = slotMachine.querySelector('.slot-machine__handle__lever');
+    const ball = slotMachine.querySelector('.slot-machine__handle__ball');
+
+    const leverKeyframes = new KeyframeEffect(
+        lever,
+        [
+            {rotate: "207deg", height: "100px"},
+            {rotate: "270deg", height: "40px"},
+            {rotate: "333deg", height: "100px"},
+            {rotate: "270deg", height: "40px"},
+            {rotate: "207deg", height: "100px"},
+        ],
+        {
+            duration: 800,
+            iterations: 1,
+        }
+    )
+
+
     /**
      * Конец анимации
-     * @type {HTMLElement}
      */
 
 })
